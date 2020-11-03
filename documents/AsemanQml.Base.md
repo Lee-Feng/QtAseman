@@ -25,7 +25,8 @@ or
 
 ```js
 var res = AsemanApp.checkPermissions(["android.permission.CAMERA"]);
-if (res["android.permission.CAMERA"] === true) {
+// 这里应该写错了：if (res["android.permission.CAMERA"] === true)
+if (res === true) {
     ...
 }
 ```
